@@ -10,7 +10,7 @@ import { LoginOk } from "./pages/loginOk";
 import { PaginaPrivada } from "./pages/paginaPrivada";
 import Signup from "./pages/signup";
 import { SignupOk } from "./pages/signupOk";
-import { LogoutPage } from "./pages/logoutOk"; // Importa la nueva página de despedida
+import { LogoutPage } from "./pages/logoutOk"; 
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
