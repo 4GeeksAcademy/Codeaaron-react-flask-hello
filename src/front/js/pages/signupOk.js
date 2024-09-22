@@ -1,10 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../store/appContext";
+import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import "../../styles/home.css";
 
 export const SignupOk = () => {
-    const { store, actions } = useContext(Context);
     const [redirect, setRedirect] = useState(false);
 
     useEffect(() => {

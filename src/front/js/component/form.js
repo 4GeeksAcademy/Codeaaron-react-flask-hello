@@ -9,16 +9,16 @@ function FormData() {
     const { store, actions } = useContext(Context);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');  // Estado para manejar el mensaje de error
+    const [error, setError] = useState(''); 
 
     async function sendData(e) {
         e.preventDefault();
-        setError('');  // Reiniciar el mensaje de error antes de intentar loguear
+        setError('');
 
         const response = await actions.login(email, password);
 
         if (!response.success) {
-            setError(response.message);  // Mostrar el mensaje de error si falla el login
+            setError(response.message); 
         }
     }
 

@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../store/appContext";
 import { Navigate } from "react-router-dom";
 import "../../styles/home.css";
 
 export const LogoutPage = () => {
-    const { store, actions } = useContext(Context);
     const [redirect, setRedirect] = useState(false);
 
     useEffect(() => {

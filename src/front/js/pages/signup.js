@@ -13,9 +13,9 @@ const Signup = () => {
     const handleSignup = async () => {
         const response = await actions.signup(email, password);
         if (response.success) {
-            setRedirectToHome(true);  // Redirige si el registro es exitoso
+            setRedirectToHome(true);
         } else {
-            setErrorMessage(response.message);  // Muestra el mensaje de error
+            setErrorMessage(response.message);
         }
     };
 

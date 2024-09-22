@@ -7,15 +7,13 @@ export const PaginaPrivada = () => {
     const { store, actions } = useContext(Context);
 
     useEffect(() => {
-        // Verificar si el usuario está autenticado al cargar el componente
         const checkAuth = async () => {
             await actions.verifyToken();
         };
 
         checkAuth();
-    }, []); // Se ejecuta solo una vez al montar el componente
+    }, []);
 
-    // Redirige a login si el usuario no está autenticado
     if (!store.auth) {
         return <Navigate to="/login" />;
     }
