@@ -14,9 +14,7 @@ import { LogoutPage } from "./pages/logoutOk"; // Importa la nueva página de de
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
 
-//create your first component
 const Layout = () => {
     const basename = process.env.BASENAME || "";
 
